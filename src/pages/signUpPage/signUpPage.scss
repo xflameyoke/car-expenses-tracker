@@ -1,0 +1,48 @@
+$indigo: #232b6a;
+
+.signup {
+  width: 100vw;
+  height: 100vh;
+  color: $indigo;
+}
+
+.signup-header {
+  color: $indigo;
+  font-weight: 600;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 5px 64px;
+
+  &__login {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.signup-form {
+  width: 480px;
+  margin: 0 auto 0 auto;
+  padding: 64px 0px 96px 0px;
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 8px;
+    padding: 0 8px;
+    font-weight: 600;
+    width: 480px;
+    height: 48px;
+    border: 2px solid $indigo;
+
+    &::-webkit-input-placeholder {
+      color: $indigo;
+      font-weight: 600;
+    }
+  }
+}

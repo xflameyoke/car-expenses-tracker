@@ -1,0 +1,41 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "react", "security", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "env": {
+    "es6": true
+  },
+  "rules": {
+    "react/prop-types": "error",
+    "sort-imports": [
+      "error",
+      {
+        "ignoreDeclarationSort": true,
+        "allowSeparatedGroups": true
+      }
+    ],
+    "no-console": 1,
+    "react/jsx-uses-react": 2,
+    "react/react-in-jsx-scope": 2,
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "trailingComma": "es5",
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false,
+        "semi": true,
+        "useTabs": false,
+        "tabWidth": 2,
+        "printWidth": 80,
+        "endOfLine": "auto"
+      }
+    ]
+  }
+}
