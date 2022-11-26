@@ -1,12 +1,13 @@
 .footer {
   color: #232b5a;
-  width: 100vw;
+  width: 100%;
+  height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 10px;
 
   @media (max-width: 768px) {
     font-size: 12px;
