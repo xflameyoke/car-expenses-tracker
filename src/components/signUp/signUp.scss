@@ -1,12 +1,10 @@
 $indigo: #232b6a;
+$space-cadet: #1c2355;
 
 .signup {
   color: $indigo;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  width: 100%;
   height: 100%;
 }
 
@@ -34,23 +32,35 @@ $indigo: #232b6a;
 }
 
 .signup-form {
-  width: 480px;
-  height: 100vh;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
   padding: 64px 0px 96px 0px;
   gap: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  @media (max-width: 768px) {
+    justify-content: center;
+    width: 250px;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__h1 {
+    font-size: 64px;
+
+    @media (max-width: 768px) {
+      font-size: 42px;
+    }
+  }
+
   &__input {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 8px;
-    padding: 0 8px;
     font-weight: 600;
-    width: 480px;
+    margin-bottom: 10px;
+    width: 472px;
     height: 48px;
     border: 2px solid $indigo;
 
@@ -64,18 +74,24 @@ $indigo: #232b6a;
     }
   }
 
-  @media (max-width: 768px) {
+  &__button {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    width: 250px;
-    padding: 0;
-    margin: 0;
-  }
-}
+    width: 480px;
+    height: 48px;
+    background-color: $indigo;
+    border: 1px solid $indigo;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
 
-.signup-h1 {
-  font-size: 64px;
+    &:hover {
+      background-color: $space-cadet;
+    }
 
-  @media (max-width: 768px) {
-    font-size: 42px;
+    @media (max-width: 768px) {
+      width: 200px;
+    }
   }
 }

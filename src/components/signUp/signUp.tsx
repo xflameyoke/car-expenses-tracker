@@ -23,7 +23,7 @@ const SignUp = () => {
         </span>
       </div>
       <div className="signup-form">
-        <h1 className="signup-h1">{login ? 'Log In' : 'Sign Up'}</h1>
+        <h1 className="signup-form__h1">{login ? 'Log In' : 'Sign Up'}</h1>
         <Formik
           initialValues={{
             email: '',
@@ -58,6 +58,9 @@ const SignUp = () => {
                 className="signup-form__input"
               />
             </label>
+            <button type="submit" className="signup-form__button">
+              {login ? 'Log In' : 'Sign Up'}
+            </button>
           </Form>
         </Formik>
       </div>
