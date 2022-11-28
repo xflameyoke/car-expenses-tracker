@@ -1,4 +1,5 @@
 $indigo: #232b6a;
+$indigo-transparent: #232b6a20;
 $space-cadet: #1c2355;
 $carmine-red: #ff0033;
 
@@ -7,8 +8,10 @@ $carmine-red: #ff0033;
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 100%;
+  height: 100vh;
   width: 100vw;
+  background-image: url('https://wallpapercave.com/wp/wp4786592.jpg');
+  background-size: cover;
 }
 
 .signup-header {
@@ -69,6 +72,8 @@ $carmine-red: #ff0033;
     width: 480px;
     height: 48px;
     border: 2px solid $indigo;
+    border-radius: 15px;
+    background-color: $indigo-transparent;
 
     &::-webkit-input-placeholder {
       color: $indigo;
@@ -91,6 +96,7 @@ $carmine-red: #ff0033;
     color: white;
     font-size: 18px;
     cursor: pointer;
+    border-radius: 15px;
 
     &:hover {
       background-color: $space-cadet;
