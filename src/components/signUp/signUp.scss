@@ -1,11 +1,14 @@
 $indigo: #232b6a;
 $space-cadet: #1c2355;
+$carmine-red: #ff0033;
 
 .signup {
   color: $indigo;
   display: flex;
+  align-items: center;
   flex-direction: column;
   height: 100%;
+  width: 100vw;
 }
 
 .signup-header {
@@ -32,6 +35,7 @@ $space-cadet: #1c2355;
 }
 
 .signup-form {
+  width: 100%;
   margin: 0 auto;
   padding: 64px 0px 96px 0px;
   gap: 32px;
@@ -58,9 +62,11 @@ $space-cadet: #1c2355;
     display: flex;
     flex-direction: row;
     align-items: center;
+    box-sizing: border-box;
     font-weight: 600;
+    padding: 0 10px;
     margin-bottom: 10px;
-    width: 472px;
+    width: 480px;
     height: 48px;
     border: 2px solid $indigo;
 
@@ -92,6 +98,16 @@ $space-cadet: #1c2355;
 
     @media (max-width: 768px) {
       width: 200px;
+    }
+  }
+
+  &__error {
+    color: $carmine-red;
+    font-weight: 600;
+    margin: 10px 10px;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
     }
   }
 }

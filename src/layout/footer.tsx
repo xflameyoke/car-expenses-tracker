@@ -4,9 +4,11 @@ import './footer.scss';
 const Footer = () => {
   const actuallYear = new Date().getFullYear();
   return (
-    <div className="footer">
-      <p>Mateusz Łuczak {actuallYear} @ All Rights Reserved</p>
-    </div>
+    <footer>
+      <div className="footer">
+        <p>Mateusz Łuczak {actuallYear} @ All Rights Reserved</p>
+      </div>
+    </footer>
   );
 };
 
