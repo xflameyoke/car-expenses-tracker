@@ -1,5 +1,6 @@
 import { Field, Form, Formik, FormikHelpers } from 'formik';
 import React, { useState } from 'react';
+import { signInWithGoogle } from '../../firebase';
 import './signUp.scss';
 
 interface Values {
@@ -99,6 +100,9 @@ const SignUp = () => {
             )}
           </Formik>
         </div>
+        <button className="signup-form__button" onClick={signInWithGoogle}>
+          Sign In With Google
+        </button>
       </div>
     </main>
   );
